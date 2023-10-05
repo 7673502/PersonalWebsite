@@ -1,0 +1,27 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#name {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+#nav-content {
+  display: flex;
+  align-items: center;
+}
+
+#nav-content a img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

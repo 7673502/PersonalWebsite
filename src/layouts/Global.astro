@@ -1,0 +1,64 @@
+---
+import { site } from '../config.js';
+---
+
+<layout>
+  <header>
+    <nav>
+        <span id="name">Pramod Anandarao</span>
+        <div id="nav-content">
+          <a href="/">Home</a>
+          <a href="/resume">Resume</a>
+          <a href="/contact">Contact</a>
+          <a href="https://twitter.com/YourUsername" target="_blank" rel="noopener noreferrer">
+            <!-- Replace with your Twitter SVG -->
+            <img src="/icons/twitter.svg" alt="Twitter" style="margin-left: 15px; vertical-align: middle;" />
+          </a>
+          <a href="https://instagram.com/YourUsername" target="_blank" rel="noopener noreferrer">
+            <!-- Replace with your Instagram SVG -->
+            <img src="/icons/instagram.svg" alt="Instagram" style="margin-left: 15px; vertical-align: middle;" />
+          </a>
+        </div>
+      </nav>
+      
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer>
+    © {new Date().getFullYear()} {site.author}
+  </footer>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 10px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+  </style>
+</layout>
